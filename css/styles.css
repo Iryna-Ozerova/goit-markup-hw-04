@@ -145,7 +145,6 @@ img {
 }
 
 .contacts-link {
-  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -154,7 +153,7 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: var(--icon-color);
+  color: var(--primary-text-color);
 }
 
 .icon-contacts {
@@ -373,7 +372,7 @@ section.section.features {
 }
 
 .team-socials-item + .team-socials-item {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Постоянные клиенты */
@@ -440,7 +439,7 @@ section.section.features {
   background-color: var(--team-background-color);
 
   font-family: Roboto, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -478,8 +477,8 @@ section.section.features {
   margin-right: 0;
 }
 
-.examples-elements:hover,
-.examples-elements:focus {
+.examples-link:hover,
+.examples-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
