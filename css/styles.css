@@ -302,7 +302,7 @@ button {
 
 .link-socials:hover,
 .link-socials:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .svg-socials {
@@ -395,5 +395,9 @@ button {
 .text-footer.social {
   font-weight: 500;
   margin-bottom: 16px;
+}
+
+footer .link-socials:hover {
+  background-color: #31d0aa;
 }
 /*#endregion footer*/
