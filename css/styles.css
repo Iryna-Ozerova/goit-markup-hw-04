@@ -151,7 +151,7 @@ button {
 
 /*#region hero*/
 .section-hero {
-  max-width: 1440;
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -160,6 +160,7 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  background-size: 1440px;
   background-color: #2e2f42;
 }
 
@@ -187,7 +188,7 @@ button {
   font-weight: 500;
   letter-spacing: 0.04em;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
 }
 
 .button-hero:hover,
@@ -236,7 +237,7 @@ button {
   border-radius: 4px;
   width: 264px;
   height: 112px;
-  background: #f4f4fd;
+  background-color: #f4f4fd;
 }
 
 /*#endregion our-benefits*/
@@ -270,12 +271,42 @@ button {
   border-radius: 0 0 4px 4px;
   overflow: hidden;
   width: calc((100% - 72px) / 4);
+
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .text-team-content {
   padding: 32px 16px;
   text-align: center;
-  background: #fff;
+  background-color: #fff;
+}
+
+.list-team-socials {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.link-socials {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-socials:hover,
+.link-socials:focus {
+  background-color: #31d0aa;
+}
+
+.svg-socials {
+  fill: #f4f4fd;
 }
 
 /*#endregion our-team*/
@@ -289,6 +320,12 @@ button {
 
 .item-list-prtfl {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-list-prtfl:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-content {
@@ -300,11 +337,34 @@ button {
   text-align: left;
 }
 
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #4d5ae5;
+
+  padding: 40px 32px 164px 32px;
+  color: #f4f4fd;
+
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-list-prtfl:hover .overlay-text {
+  transform: translateY(0);
+}
+
 /*#endregion our-portfolio*/
 
 /*#region footer*/
 .section-footer {
-  background: #2e2f42;
+  background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -312,6 +372,7 @@ button {
 .logo-footer .logo-part {
   color: #f4f4fd;
 }
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -320,5 +381,19 @@ button {
 .text-footer {
   max-width: 264px;
   color: #f4f4fd;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-socials {
+  margin-left: 120px;
+}
+
+.text-footer.social {
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 /*#endregion footer*/
